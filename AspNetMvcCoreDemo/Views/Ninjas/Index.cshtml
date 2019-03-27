@@ -1,0 +1,86 @@
+﻿@using ShowInfos.Core.Models
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model IEnumerable<ShowInfos.Core.Models.Ninja>
+@{
+    ViewBag.ItemName = "Ninja";
+    ViewBag.ItemNames = ViewBag.ItemName + "s";
+}
+
+<h2>@ViewBag.ItemNames</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li><a asp-controller="@ViewBag.ItemNames" asp-action="Details" asp-route-id="@item.Id">@item</a></li>
+    }
+</ul>
+<a onclick="add();">Add @ViewBag.ItemName</a>
+<div id="AddDialog" class="easyui-dialog" style="width: 650px; padding: 1px" closed="true" resizable="true" modal="true" 
+     data-options="iconCls: 'icon-add',buttons: '#dlg-buttons'">
+    <form id="addForm" method="post" novalidate="novalidate">
+        <div class="talbe_border">
+            <table id="tblAdd" border="0" cellpadding="0" cellspacing="0" class="talbe_list">
+                <tr>
+                    <th colspan="4" class="header tou"></th>
+                </tr>
+                <tr>
+                <td class="left1">Name</td>
+                <td class="left2">
+                    <input class="easyui-validatebox" type="text" id="txtName" name="Name" data-options="required:true,validType:'length[1,50]'" />
+                </td>
+                <tr>
+                    <td bgcolor="#F0F7FD" colspan="4" class="btttonCenter">
+                        <a href="javascript:AddList();" class="easyui-linkbutton" id="btnAdd" iconcls="icon-ok">确定</a>
+                        <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-cancel" onclick="javascript: $('#AddDialog').dialog('close');">关闭</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+<script>
+    function add() {
+        $('#AddDialog').show();
+        $('#AddDialog').dialog('open').dialog('setTitle', 'Ninja');
+    }
+
+    //异步实现添加信息
+    function AddList() {
+        //在前台对用户输入的信息做判断，不符合要求时“添加用户”就不能提交给后台
+        var valid = $("#addForm").form('validate');
+        if (valid === false) {
+            return false;
+        }
+        var postData = $("#addForm").serializeArray();
+        //Ajax异步实现加载
+        $.ajax({
+            url: "/Ninjas/Create?r=" + Math.random(),
+            data: postData,
+            type: "post",
+            success: function(data) {
+                if (data == "OK") {
+                    $.messager.alert("系统提示！", "添加成功");
+                    $('#AddDialog').dialog('close');
+                    $("#addForm").form("clear");
+                    GetAll();
+                } else {
+                    $.messager.alert("系统提示！", "添加失败");
+                }
+            }
+        });
+    };
+
+    function GetAll() {
+        $.ajax({
+            url: "/Ninjas/GetAll?r=" + Math.random(),
+            type: "get",
+            success: function (data) {
+                $("ul").empty();
+                for (var i = 0; i < data.length; i++) {
+                    $("ul").append($("<li><a asp-controller='@ViewBag.ItemNames' asp-action='Details' asp-route-id='" + data[i].id + "'>" + data[i].name+"</a></li>"));
+                }
+            }
+        });
+    }
+
+</script>

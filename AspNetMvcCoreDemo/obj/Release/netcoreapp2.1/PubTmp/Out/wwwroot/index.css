@@ -1,0 +1,194 @@
+﻿html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, textarea, select, p, blockquote, th, td {margin: 0;padding: 0;}
+html, body {height: 100%;width: 100%;}
+body {font: 12px/1.33 "微软雅黑",Verdana,"宋体",Helvetica,sans-serif;background-color:#fff}
+/*通用
+===============================================*/
+table {border-spacing: 0;}
+.tablespacing {border-spacing: 3px;}
+.clear{ clear:both}
+fieldset, img {border: 0 none;}
+li {list-style: none outside none;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+cite, em {font-style: normal;}
+input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {cursor: pointer;}
+input[type="text"],input[type="password"],textarea{border:1px solid #ccc}
+input[type="text"],input[type="password"]{ padding:2px; height:16px;}
+.clearfix:after {clear: both;content: ".";display: block;height: 0;visibility: hidden;}
+label[disabled="true"], label[disabled=""], label[disabled="disabled"] {color: #000000;}
+a:link, a:visited {text-decoration: none;}
+a:hover {text-decoration:none;}
+
+.icon-add{
+	background:url(Images/icon/edit_add.png) no-repeat center center;
+}
+.icon-edit{
+	background:url(Images/icon/pencil.png) no-repeat center center;
+}
+.icon-remove{
+	background:url(Images/icon/edit_remove.png) no-repeat center center;
+}
+.icon-save{
+	background:url(Images/icon/filesave.png) no-repeat center center;
+}
+.icon-cut{
+	background:url(Images/icon/cut.png) no-repeat center center;
+}
+.icon-ok{
+	background:url(Images/icon/ok.png) no-repeat center center;
+}
+.icon-no{
+	background:url(Images/icon/no.png) no-repeat center center;
+}
+.icon-cancel{
+	background:url(Images/icon/cancel.png) no-repeat center center;
+}
+.icon-reload{
+	background:url(Images/icon/reload.png) no-repeat center center;
+}
+.icon-search{
+	background:url(Images/icon/search.png) no-repeat center center;
+}
+.icon-print{
+	background:url(Images/icon/print.png) no-repeat center center;
+}
+.icon-help{
+	background:url(Images/icon/help.png) no-repeat center center;
+}
+.icon-undo{
+	background:url(Images/icon/undo.png) no-repeat center center;
+}
+.icon-redo{
+	background:url(Images/icon/redo.png) no-repeat center center;
+}
+.icon-back{
+	background:url(Images/icon/back.png) no-repeat center center;
+}
+.icon-sum{
+	background:url(Images/icon/sum.png) no-repeat center center;
+}
+.icon-tip{
+	background:url(Images/icon/tip.png) no-repeat center center;
+}
+.icon-mini-add{
+	background:url(Images/icon/mini_add.png) no-repeat center center;
+}
+.icon-mini-edit{
+	background:url(Images/icon/mini_edit.png) no-repeat center center;
+}
+.icon-mini-refresh{
+	background:url(Images/icon/mini_refresh.png) no-repeat center center;
+}
+.icon-excel{
+	background:url(Images/icon/excel.png) no-repeat;
+}
+.icon-word{
+	background:url(Images/icon/word.png) no-repeat;
+}
+.icon-organ{
+	background:url(Images/icon/organ.png) no-repeat;
+}
+.icon-lock{
+	background:url(Images/icon/lock.png) no-repeat;
+}
+.icon-alarm{
+	background:url(Images/icon/alarm.png) no-repeat;
+}
+.icon-view{
+	background:url(Images/icon/view.png) no-repeat;
+}
+.icon-pie{
+	background:url(Images/icon/pie.png) no-repeat;
+}
+.icon-bar{
+	background:url(Images/icon/bar.png) no-repeat;
+}
+.icon-curve{
+	background:url(Images/icon/curve.png) no-repeat;
+}
+.icon-computer{
+	background:url(Images/icon/computer.png) no-repeat;
+}
+.icon-house{
+	background:url(Images/icon/house.png) no-repeat;
+}
+.icon-key{
+	background:url(Images/icon/key.png) no-repeat;
+}
+.icon-photo{
+	background:url(Images/icon/photo.png) no-repeat;
+}
+.icon-user{
+	background:url(Images/icon/user.png) no-repeat;
+}
+.icon-group{
+	background:url(Images/icon/group.png) no-repeat;
+}
+.icon-group-key{
+	background:url(Images/icon/group_key.png) no-repeat;
+}
+.icon-telephone{
+	background:url(Images/icon/telephone.png) no-repeat;
+}
+.icon-phone{
+	background:url(Images/icon/phone.png) no-repeat;
+}
+.icon-table{
+	background:url(Images/icon/table.png) no-repeat;
+}
+.icon-book{
+	background:url(Images/icon/book.png) no-repeat;
+}
+.icon-comment{
+	background:url(Images/icon/comment.png) no-repeat;
+}
+.icon-date{
+	background:url(Images/icon/date.png) no-repeat;
+}
+.icon-email{
+	background:url(Images/icon/email.png) no-repeat;
+}
+.icon-first{
+	background:url(Images/icon/first.png) no-repeat;
+}
+.icon-last{
+	background:url(Images/icon/last.png) no-repeat;
+}
+.icon-next{
+	background:url(Images/icon/next.png) no-repeat;
+}
+.icon-previous{
+	background:url(Images/icon/previous.png) no-repeat;
+}
+.icon-stop{
+	background:url(Images/icon/stop.png) no-repeat;
+}
+.icon-setting{
+	background:url(Images/icon/setting.png) no-repeat;
+}
+.icon-batch-add{
+	background:url(Images/icon/batch_add.png) no-repeat;
+}
+.icon-expand{
+	background:url(Images/icon/expand.png) no-repeat;
+}
+.icon-collapse{
+	background:url(Images/icon/collapse.png) no-repeat;
+}
+
+
+/*右部结构*/
+.talbe_border { float:left; width:99.5%; border: 1px #A5BFD1 solid;overflow:hidden; display:inline; margin-top:3px;}
+.talbe_list { float:left;width:100%;height:100%}
+.talbe_list td { border-bottom: 1px #D1E7F1 solid; border-left: 1px #D1E7F1 solid; padding: 5px;font-size:12px;}
+.talbe_list th { background:url(Images/titel_Bg1.gif) left repeat-x; text-align:center;}
+.talbe_list th.tou { background:url(Images/titel_Bg.gif) repeat-x; text-align:center;}
+.talbe_list td.nolet { border-left: 0px;}
+.talbe_list td.left1 { text-align:right; padding-right: 10px; font-weight:bold; color:black; width:18%;}
+.talbe_list td.left2 { text-align:left; padding-left: 10px; height:18px; width:22%; font-weight:bold; color:black; }
+.talbe_list td.left1 p {float:left; width: 100%; text-align:right; font-weight:normal; color:#CCCCCC}
+.talbe_list td.left2 span { float:left; display:block;}
+.talbe_list td.left2 div{ float:left; height: 25px; line-height:25px; margin-left: 15px; color:#929292; display:inline;}
+.talbe_list td.noya { padding:0px; border-bottom:0px; border-right: 0px; border-left:0px;}
+.btttonCenter { width: 100%; text-align: center;}
+.header {height: 29px; background:url(Images/titel_Bg.gif) repeat-x; font: bold 12px/29px "宋体"; color:#000;}
+.head_ling {height: 29px; background:url(Images/titel_Bg.gif) repeat-x; font: bold 12px/29px "宋体"; color:#000; text-align:center;}

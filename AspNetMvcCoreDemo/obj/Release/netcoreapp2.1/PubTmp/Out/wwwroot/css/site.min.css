@@ -1,0 +1,116 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+.container {
+    /*padding-right: 15px;
+    padding-left: 15px;*/
+    margin-right: auto;
+    margin-left: auto;
+    width: 1080px;
+    height: 1920px;
+}
+
+.showinfoMain {
+    width: 1080px;
+    height: 1920px;
+    border: 1px solid #000000;
+}
+
+.EmployeePanel {
+    font-size: 30px;
+    overflow: hidden;
+    width: 1080px;
+    height: 1920px;
+    text-shadow: none;
+    float: left;
+}
+
+    .EmployeePanel .employee_photo_container {
+        background-color: #fff;
+        float: left;
+        display: table;
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 550px;
+        width: 1080px;
+        margin: 20px 10px;
+        padding: 10px;
+        text-shadow: none;
+    }
+
+        .EmployeePanel .employee_photo_container .employee_photo {
+            background-color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+            overflow: hidden;
+            margin: 20px auto;
+            height: 500px;
+            width: 400px;
+            padding: 10px;
+            text-shadow: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+    .EmployeePanel .label {
+        color: #000000;
+        float: left;
+        height: 200px;
+        width: 350px;
+        font-size: 95px;
+        text-align: left;
+    }
+
+    .EmployeePanel .text {
+        float: left;
+        height: 200px;
+        width: 600px;
+        text-align: left;
+        font-size: 95px;
+        font-weight: normal;
+    }
+
+    .EmployeePanel .employee_remark_label {
+        width: 1080px;
+    }
+
+    .EmployeePanel .employee_remark {
+        width: 1000px;
+        display: inline;
+        margin-left: 30px;
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 1.4;
+        text-align: left;
+        vertical-align: baseline;
+        border-radius: .25em;
+    }

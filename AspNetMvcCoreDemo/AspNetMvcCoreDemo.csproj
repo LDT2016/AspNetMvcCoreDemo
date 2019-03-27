@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+	 <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Ninjas\**" />
+    <Content Remove="Views\Ninjas\**" />
+    <EmbeddedResource Remove="Views\Ninjas\**" />
+    <None Remove="Views\Ninjas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\NinjasController.cs" />
+    <Compile Remove="Core\Models\Ninja.cs" />
+    <Compile Remove="Core\Models\Pirate.cs" />
+    <Compile Remove="Core\Models\Plant.cs" />
+    <Compile Remove="Core\Models\Zombie.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="51Degrees.mobi-core" Version="3.2.21.1" />
+    <PackageReference Include="ABCpdfCore" Version="11.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\ABCpdfCore.xml" Link="printdll\ABCpdfCore.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\ABCpdfCore.dll" Link="printdll\ABCpdfCore.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\3DGlue11-32.dll" Link="printdll\3DGlue11-32.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\ABCpdf11-32.dll" Link="printdll\ABCpdf11-32.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\ChakraCore64.dll" Link="printdll\ChakraCore64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\3DGlue11-64.dll" Link="printdll\3DGlue11-64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\PrintHook64.dll" Link="printdll\PrintHook64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\PrintHook32.dll" Link="printdll\PrintHook32.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\ABCpdf11-64.dll" Link="printdll\ABCpdf11-64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\yjli\.nuget\packages\abcpdfcore\11.2.3\build\ChakraCore32.dll" Link="printdll\ChakraCore32.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Pdf\AbcPdfCreate2.cshtml" />
+    <None Include="Views\Pdf\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <NativeLibs Remove="StartupDevelopment.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <NativeLibs Remove="Infrastructure\Data\51DegreeService.cs" />
+  </ItemGroup>
+
+</Project>

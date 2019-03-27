@@ -1,0 +1,61 @@
+﻿<script src="~/lib/jquery/dist/jquery.js"></script>
+@model IEnumerable<ShowInfos.Core.Models.Doctors>
+<div class="showinfoMain">
+    <div class="showinfoMain-carousel carousel slide">
+        <div class="carousel-inner">
+            @if (Model != null)
+            {
+                for (var i = 0; i < Model.Count(); i++)
+                {
+                    var item = Model.ToList()[i];
+                    var active = i == 0 ? " active" : string.Empty;
+                    <div class="item @active">
+                        <div class='EmployeePanel'>
+                            <div class="employee_details">
+                                <div class="employee_photo_container">
+                                    <img class='employee_photo' src="@Url.Action("ShowImage", "Doctors", new
+                                                                     {
+                                                                         id = item.Id
+                                                                     })"/>
+                                </div>
+                                <div class="employee_name_info">
+                                    <div class='text employee_name'>@item.Name</div>
+                                    <div class='text employee_worknum showinfo_education_@item.Id'>@item.Education</div>
+                                    <div class='text employee_posi showinfo_position_@item.Id'>@item.Position</div>
+                                </div>
+                            </div>
+                            <div class='text employee_Specialty_details'>
+                                <div class='text employee_Specialty_title'>业务专长:</div>
+                                <div class='text employee_remark showinfo_specialty_@item.Id'></div>
+                            </div>
+                            <div class="ClinicTime">
+                                <div class='employee_copay_label'>门诊时间:</div>
+                                <div class='employee_copay'>@item.ClinicTime</div>
+                                <div class='employee_clinic_label'>挂号价格:</div>
+                                <div class='employee_clinic'>@item.Copay 元</div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <script>
+                    $.ajax({
+                        url: `/Doctors/GetSpecialty?id=@string.Join(",", Model?.ToList().Select(x => x.Id).ToList())`,
+                        type: "get",
+                        success: function(data1) {
+                            if (data1.length > 0) {
+                                for (var i = 0; i < data1.length; i++) {
+                                    var specialty = ".showinfo_specialty_" + data1[i].Id;
+                                    var education = ".showinfo_education_" + data1[i].Id;
+                                    var position = ".showinfo_position_" + data1[i].Id;
+                                    $(specialty).html(data1[i].Specialty);
+                                    $(education).html(data1[i].Education);
+                                    $(position).html(data1[i].Position);
+                                }
+                            }
+                        }
+                    });
+                </script>
+            }
+        </div>
+    </div>
+</div>

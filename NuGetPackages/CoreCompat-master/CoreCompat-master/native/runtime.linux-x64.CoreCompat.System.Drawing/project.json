@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0-*",
+
+  "authors": [
+    "Quamotion"
+  ],
+
+  "dependencies": {
+    "System.Runtime": "4.1.0",
+  },
+
+  "title": "Linux Native libraries for System.Drawing",
+  "description": "Allows you to use System.Drawing on Linux",
+  "packOptions": {
+    "licenseUrl": "https://raw.githubusercontent.com/CoreCompat/CoreCompat",
+    "owners": [
+      "Quamotion"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://raw.githubusercontent.com/CoreCompat/CoreCompat"
+    },
+    "files": {
+      "mappings": {
+        "runtimes/linux-x64/native/libgdiplus.so": "out/usr/local/lib/libgdiplus.so",
+        "runtimes/linux-x64/native/libglib-2.0.so.0": "out/usr/local/lib/libglib-2.0.so.0",
+        "runtimes/linux-x64/native/libcairo.so.2": "out/usr/local/lib/libcairo.so.2",
+        "runtimes/linux-x64/native/libfreetype.so.6": "out/usr/local/lib/libfreetype.so.6",
+        "runtimes/linux-x64/native/libpng12.so.0": "out/usr/local/lib/libpng12.so.0",
+        "runtimes/linux-x64/native/libjpeg.so.8": "out/usr/local/lib/libjpeg.so.8",
+        "runtimes/linux-x64/native/libtiff.so.5": "out/usr/local/lib/libtiff.so.5",
+        "runtimes/linux-x64/native/libgif.so.7": "out/usr/local/lib/libgif.so.7",
+        "runtimes/linux-x64/native/libfontconfig.so.1": "out/usr/local/lib/libfontconfig.so.1",
+        "runtimes/linux-x64/native/libexif.so.12": "out/usr/local/lib/libexif.so.12",
+        "runtimes/linux-x64/native/libpixman-1.so.0": "out/usr/local/lib/libpixman-1.so.0",
+        "runtimes/linux-x64/native/libjbig.so.0": "out/usr/local/lib/libjbig.so.0"
+      }
+    }
+  },
+
+  "buildOptions": {
+     "allowUnsafe": true
+  },
+
+  "frameworks": {
+    "netstandard1.5": {
+      "dependencies": {
+      }
+    }
+  }
+}

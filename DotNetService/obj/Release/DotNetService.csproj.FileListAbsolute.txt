@@ -1,0 +1,7 @@
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\DotNetService.dll
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\DotNetService.pdb
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DotNetService\obj\Release\DotNetService.csprojAssemblyReference.cache
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DotNetService\obj\Release\DotNetService.csproj.CoreCompileInputs.cache
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DotNetService\obj\Release\DotNetService.csproj.CopyComplete
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DotNetService\obj\Release\DotNetService.dll
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DotNetService\obj\Release\DotNetService.pdb

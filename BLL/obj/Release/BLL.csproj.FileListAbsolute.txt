@@ -1,0 +1,7 @@
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\BLL.dll
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\BLL.pdb
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\BLL\obj\Release\BLL.csprojAssemblyReference.cache
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\BLL\obj\Release\BLL.csproj.CopyComplete
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\BLL\obj\Release\BLL.dll
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\BLL\obj\Release\BLL.pdb

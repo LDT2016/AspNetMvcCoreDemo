@@ -1,0 +1,20 @@
+﻿@model object
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <ul>
+        <li>
+            <a asp-controller="Pdf" asp-action="AbcPdfCreate">Test1 - AbcPdf:Create a Document</a>
+        </li>
+        <li>
+            <a asp-controller="Pdf" asp-action="AbcPdfCreate1">Test2 - AbcPdf:Create a Picture</a>
+        </li>
+        <li>
+            <a asp-controller="Pdf" asp-action="AbcPdfCreate2">Test3 - 51Degrees</a>
+        </li>
+    </ul>
+</div>
