@@ -20,9 +20,6 @@ using Swashbuckle.AspNetCore.Swagger;
 
 namespace ApiDemo
 {
-	///
-	///
-	///
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -76,11 +73,11 @@ namespace ApiDemo
                     });
 
                 //获取设置配置信息的 的路径对象   swagger界面配置
-                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-                var xmlPath = Path.Combine(basePath, "ApiDemo.xml");
-                x.IncludeXmlComments(xmlPath);
-                x.OperationFilter<HttpHeaderOperation>(); // 添加httpHeader参数
-                x.DescribeStringEnumsInCamelCase();
+                //var basePath = PlatformServices.Default.Application.ApplicationBasePath;
+                //var xmlPath = Path.Combine(basePath, "ApiDemo.xml");
+                //x.IncludeXmlComments(xmlPath);
+                //x.OperationFilter<HttpHeaderOperation>(); // 添加httpHeader参数
+                //x.DescribeStringEnumsInCamelCase();
             });
 
         }
