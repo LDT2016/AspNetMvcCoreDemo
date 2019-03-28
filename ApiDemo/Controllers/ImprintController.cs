@@ -45,12 +45,12 @@ namespace ApiDemo.Controllers
             return Ok(new { IsMobile = isMobile, IsTablet = isTablet });
         }
 
-        //// GET: api/Imprint/5
-        //[HttpGet("{id}", Name = "Get")]
-        //public string Get(int id)
-        //{
-        //    return "get_value";
-        //}
+        // GET: api/Imprint/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "values";
+        }
 
         // POST: api/Imprint
         [HttpPost]

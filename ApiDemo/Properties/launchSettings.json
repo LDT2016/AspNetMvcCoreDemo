@@ -3,12 +3,14 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:56502/",
-      "sslPort": 0
+      "applicationUrl": "http://localhost:64960/",
+      "sslPort": 44368
     }
   },
-  "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
+    "ApiDemo": {
+      "commandName": "IISExpress"
+    },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,

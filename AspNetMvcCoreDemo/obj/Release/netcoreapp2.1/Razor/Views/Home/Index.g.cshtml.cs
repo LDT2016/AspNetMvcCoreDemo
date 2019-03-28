@@ -61,7 +61,7 @@ using ShowInfos.Models;
             WriteLiteral("\r\n<div class=\"row\">\r\n    <ul>\r\n        <li>\r\n            ");
             EndContext();
             BeginContext(102, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ec0abbcf6c546c489a58f5be7eaaaa4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53f8229c97e940aebbab554d1ffb7a08", async() => {
                 BeginContext(148, 13, true);
                 WriteLiteral("Manage Ninjas");
                 EndContext();

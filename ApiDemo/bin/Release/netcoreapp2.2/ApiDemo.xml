@@ -258,6 +258,17 @@
             <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
             <returns></returns>
         </member>
+        <member name="T:ApiDemo.Services.FiftyOneDegreesService">
+            <summary>
+            FiftyOneDegreesService
+            </summary>
+        </member>
+        <member name="M:ApiDemo.Services.FiftyOneDegreesService.#ctor(ApiDemo.Interface.ICacheService)">
+            <summary>
+            FiftyOneDegreesService
+            </summary>
+            <param name="cache"></param>
+        </member>
         <member name="M:ApiDemo.Services.MemoryCacheService.Add(System.String,System.Object)">
             <summary>
             添加缓存

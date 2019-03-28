@@ -3,4 +3,3 @@ D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\Model.pdb
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Model\obj\Release\Model.dll
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Model\obj\Release\Model.pdb
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Model\obj\Release\Model.csprojAssemblyReference.cache
