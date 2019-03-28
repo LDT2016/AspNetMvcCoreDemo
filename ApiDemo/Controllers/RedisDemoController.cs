@@ -36,7 +36,7 @@ namespace ApiDemo.Controllers
         public void Post([FromBody] string value)
         {
         }
-
+        
         // PUT: api/RedisDemo/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
