@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,9 +21,12 @@ namespace ApiDemo.Controllers
 
         // GET: api/RedisDemo
         [HttpGet]
-        public IEnumerable<string> Get()
+        public Task<HttpResponseMessage> Get()
         {
-            return new string[] { "value1", "value2" };
+            var res = new HttpResponseMessage();
+            res.StatusCode = HttpStatusCode.Accepted;
+            res.Content = new StringContent("vatlues");
+            return Task.FromResult(res);
         }
 
         // GET: api/RedisDemo/5

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using ApiDemo.Interface;
 using ApiDemo.Services;
@@ -42,8 +44,13 @@ namespace ApiDemo.Controllers
             var clientMatch = provider.Match(clientAgent);
             var isMobile = clientMatch["IsMobile"].ToString();
             var isTablet = clientMatch["IsTablet"].ToString();
-            return Ok(new { IsMobile = isMobile, IsTablet = isTablet });
+            var obj = new { IsMobile = isMobile, IsTablet = isTablet };
+            var res = new HttpResponseMessage();
+            res.StatusCode = HttpStatusCode.Accepted;
+            res.Content = new StringContent("vatlues");
+            return BadRequest("safasfasd");
         }
+
 
         // GET: api/Imprint/5
         [HttpGet("{id}")]
