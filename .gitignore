@@ -141,3 +141,5 @@ Model/obj/Release/Model.csproj.FileListAbsolute.txt
 Model/obj/Release/Model.csprojAssemblyReference.cache
 Model/obj/Release/Model.dll
 Model/obj/Release/Model.pdb
+/ApiDemo/wwwroot/resources/icons
+/ApiDemo/bin
