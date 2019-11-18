@@ -12,6 +12,6 @@
     <Import Project="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.razor.viewcompilation\2.1.1\build\netstandard2.0\Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.targets" Condition="Exists('C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.razor.viewcompilation\2.1.1\build\netstandard2.0\Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.targets')" />
     <Import Project="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.app\2.1.1\build\netcoreapp2.1\Microsoft.AspNetCore.App.targets" Condition="Exists('C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.app\2.1.1\build\netcoreapp2.1\Microsoft.AspNetCore.App.targets')" />
     <Import Project="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.all\2.1.1\build\netcoreapp2.1\Microsoft.AspNetCore.All.targets" Condition="Exists('C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.all\2.1.1\build\netcoreapp2.1\Microsoft.AspNetCore.All.targets')" />
-    <Import Project="$(NuGetPackageRoot)abcpdfcore\11.2.3\build\ABCpdfCore.targets" Condition="Exists('$(NuGetPackageRoot)abcpdfcore\11.2.3\build\ABCpdfCore.targets')" />
+    <Import Project="$(NuGetPackageRoot)\abcpdfcore\11.2.3\build\ABCpdfCore.targets" Condition="Exists('$(NuGetPackageRoot)\abcpdfcore\11.2.3\build\ABCpdfCore.targets')" />
   </ImportGroup>
 </Project>

@@ -1,3 +1,9 @@
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.csprojAssemblyReference.cache
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.csproj.CoreCompileInputs.cache
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.RazorAssemblyInfo.cache
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.RazorAssemblyInfo.cs
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.AssemblyInfoInputs.cache
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.AssemblyInfo.cs
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\clidriver\bin\db2app64.dll
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\clidriver\bin\db2cli.exe
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\clidriver\bin\db2cli64.dll
@@ -101,6 +107,7 @@ D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\Api
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\ApiDemo.runtimeconfig.dev.json
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\ApiDemo.dll
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\ApiDemo.pdb
+D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\ApiDemo.xml
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\AplDbHelper.dll
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\BLL.dll
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\DAL.dll
@@ -133,12 +140,6 @@ D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\Mod
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\DBUtility.pdb
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\AplDbHelper.pdb
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\bin\Debug\netcoreapp2.2\Microsoft.Extensions.PlatformAbstractions.xml
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.csprojAssemblyReference.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.csproj.CoreCompileInputs.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.RazorAssemblyInfo.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.RazorAssemblyInfo.cs
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.AssemblyInfoInputs.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.AssemblyInfo.cs
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.RazorTargetAssemblyInfo.cache
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.csproj.CopyComplete
 D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ApiDemo\obj\Debug\netcoreapp2.2\ApiDemo.dll

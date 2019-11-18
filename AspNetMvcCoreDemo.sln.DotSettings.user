@@ -1,4 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/RecentlyUsedProfile/@EntryValue">Built-in: Full Cleanup</s:String>
 	<s:Int64 x:Key="/Default/CodeStyle/Naming/CSharpAutoNaming/AutoNamingCompletedVersion/@EntryValue">2</s:Int64>
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=Locals/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=Method/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
@@ -10,12 +11,13 @@
   &lt;Assembly Path="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration.azurekeyvault\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.AzureKeyVault.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Configuration.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll" /&gt;&#xD;
-  &lt;ProjFile Path="C:\Users\yjli\Desktop\New folder\Microsoft.Extensions.Configuration\Microsoft.Extensions.Configuration.csproj" /&gt;&#xD;
   &lt;Assembly Path="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Nuget\NuGetPackages\automapper\9.0.0\lib\netstandard2.0\AutoMapper.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=93CE8BD52364A942BBEFDAF2F1E1436D/AbsolutePath/@EntryValue">D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\ReactJS.DotSettings</s:String>
 	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=93CE8BD52364A942BBEFDAF2F1E1436D/RelativePath/@EntryValue">..\ReactJS.DotSettings</s:String>
 	<s:Boolean x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=93CE8BD52364A942BBEFDAF2F1E1436D/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File93CE8BD52364A942BBEFDAF2F1E1436D/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File93CE8BD52364A942BBEFDAF2F1E1436D/IsOn/@EntryValue">False</s:Boolean>
 	<s:Double x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File93CE8BD52364A942BBEFDAF2F1E1436D/RelativePriority/@EntryValue">1</s:Double>
 	<s:Boolean x:Key="/Default/Housekeeping/CodeStructure/SynchronizeViewToCaret/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

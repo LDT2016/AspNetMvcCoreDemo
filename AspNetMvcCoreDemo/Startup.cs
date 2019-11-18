@@ -34,7 +34,7 @@ namespace ShowInfos
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddMvc().AddJsonOptions(option => option.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            services.AddMvc().AddJsonOptions(option => option.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
             //.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<ApplicationDbContext>(optionsBuilder => optionsBuilder.UseSqlServer(AppConfig.MySqlConnection));

@@ -6,230 +6,235 @@ body {
 }
 
 /* Wrapping element */
+
 /* Set some basic padding to keep content from hitting the edges */
+
 .body-content {
     /*padding-left: 15px;
     padding-right: 15px;*/
 }
 
 /* Carousel */
+
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
 }
 
 /* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
+
+.carousel-inner .item img[src$=".svg"] { width: 100%; }
 
 /* QR code generator */
-#qrCode {
-    margin: 15px;
-}
+
+#qrCode { margin: 15px; }
 
 .container {
+    height: 1920px;
+    margin-left: auto;
     /*padding-right: 15px;
     padding-left: 15px;*/
     margin-right: auto;
-    margin-left: auto;
     width: 1080px;
-    height: 1920px;
 }
 
 .showinfoMain {
-    width: 1080px;
-    height: 1920px;
     border: 1px solid #000000;
+    height: 1920px;
+    width: 1080px;
     /*background-image: url('../images/bg.jpg');*/
 }
+
 .EmployeePanel {
-    font-size: 30px;
-    overflow: hidden;
-    width: 1080px;
-    height: 1920px;
-    text-shadow: none;
-    float: left;
     background-image: url('../images/bg.jpg');
+    float: left;
+    font-size: 30px;
+    height: 1920px;
+    overflow: hidden;
+    text-shadow: none;
+    width: 1080px;
 }
 
-    .EmployeePanel .employee_photo_container {
-        /*background-color: #fff;*/
-        float: left;
-        display: table;
-        text-align: center;
-        box-sizing: border-box;
-        overflow: hidden;
-        height: 550px;
-        /*width: 1080px;*/
-        margin: 20px 10px;
-        padding: 10px;
-        text-shadow: none;
-        margin-top: 450px;
-        margin-left: 50px;
-    }
+.EmployeePanel .employee_photo_container {
+    box-sizing: border-box;
+    display: table;
+    /*background-color: #fff;*/
+    float: left;
+    height: 550px;
+    /*width: 1080px;*/
+    margin: 20px 10px;
+    margin-left: 50px;
+    margin-top: 450px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    text-shadow: none;
+}
 
-    .EmployeePanel .employee_photo_container .employee_photo {
-        /*background-color: #fff;*/
-        text-align: center;
-        box-sizing: border-box;
-        overflow: hidden;
-        margin: 20px auto;
-        height: 500px;
-        width: 400px;
-        padding: 10px;
-        text-shadow: none;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
+.EmployeePanel .employee_photo_container .employee_photo {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 10px;
+    /*background-color: #fff;*/
+    text-align: center;
+    text-shadow: none;
+    width: 400px;
+}
 
-    .EmployeePanel .label {
-        float: left;
-        height:130px;
-        width: auto;
-        text-align: left;
-        font-weight: normal;
-        font-size: 55px;
-    }
+.EmployeePanel .label {
+    float: left;
+    font-size: 55px;
+    font-weight: normal;
+    height: 130px;
+    text-align: left;
+    width: auto;
+}
 
 .EmployeePanel .text {
     float: left;
+    font-size: 50px;
+    font-weight: normal;
     /*height: 130px;*/
     /*width: auto;*/
     min-width: 400px;
     text-align: left;
-    font-size: 50px;
-    font-weight: normal;
 }
 
 
-.EmployeePanel .employee_remark_label {
-    width: 1080px;
-}
+.EmployeePanel .employee_remark_label { width: 1080px; }
 
 .employee_details {
     float: left;
     width: 100%;
 }
+
 .employee_name_info {
-    margin-top: 600px;
-    margin-left: 180px;
-    width: 400px;
     float: left;
+    margin-left: 180px;
+    margin-top: 600px;
+    width: 400px;
 }
 
 .ClinicTime {
+    color: #fff !important;
     float: left;
+    font-size: 35px !important;
     margin-top: 415px;
     width: 100%;
-    color: #fff !important;
-    font-size: 35px !important;
 }
+
 .employee_posi_label {
-    width: 300px;
     margin-left: 7px;
     margin-top: 5px;
+    width: 300px;
 }
+
 .employee_posi {
-    min-width: 205px !important;
-    margin-top: 10px;
     font-size: 33px !important;
+    margin-top: 10px;
+    min-width: 205px !important;
 }
+
 .employee_worknum_label {
-    width: 300px;
     margin-left: 7px;
     margin-top: 5px;
+    width: 300px;
 }
 
 .employee_worknum {
-    min-width: 205px !important;
-    margin-top: 10px;
+    font-size: 35px !important;
     height: 90px;
-    font-size: 35px !important
+    margin-top: 10px;
+    min-width: 205px !important;
 }
+
 .employee_copay_label {
     float: left;
-    height: 130px;
-    width: auto;
-    text-align: left;
     font-weight: normal;
-    width: 170px;
+    height: 130px;
     margin-left: 40px;
     margin-top: 5px;
+    text-align: left;
+    width: auto;
+    width: 170px;
 }
 
 .employee_copay {
     float: left;
+    font-weight: normal;
+    margin-top: 5px;
     /* height: 130px; */
     /* width: auto; */
     min-width: 400px;
-    text-align: left;
-    font-weight: normal;
     min-width: 450px !important;
-    margin-top: 5px;
+    text-align: left;
 }
 
 .employee_clinic_label {
     float: left;
-    height: 130px;
-    width: auto;
-    text-align: left;
     font-weight: normal;
-    width: 170px;
+    height: 130px;
     margin-left: 7px;
     margin-top: 5px;
+    text-align: left;
+    width: auto;
+    width: 170px;
 }
 
 .employee_clinic {
     float: left;
+    height: 90px;
+    margin-top: 5px;
     /* height: 130px; */
     /* width: auto; */
     min-width: 400px;
-    text-align: left;
     min-width: 205px !important;
-    margin-top: 5px;
-    height: 90px;
+    text-align: left;
 }
 
 
 .employee_Specialty_details {
-    width: 750px;
+    border-radius: .25em;
     display: inline;
-    margin-left: 30px;
-    margin-bottom: 30px;
     font-size: 45px !important;
     font-weight: normal;
+    height: 270px;
     line-height: 1.4;
+    margin: 80px 0 53px 175px;
+    margin-bottom: 30px;
+    margin-left: 30px;
     text-align: left;
     vertical-align: baseline;
-    border-radius: .25em;
-    height: 270px;
-    margin: 80px 0 53px 175px;
+    width: 750px;
 }
 
 .employee_Specialty_title {
-    width: 750px;
-    display: inline;
-    margin-left: 30px;
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 1.4;
-    text-align: left;
-    vertical-align: baseline;
     border-radius: .25em;
     color: #ffffff;
+    display: inline;
+    font-size: 28px;
     font-size: 45px !important;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-left: 30px;
+    text-align: left;
+    vertical-align: baseline;
+    width: 750px;
 }
 
 .employee_remark {
-    width: 750px;
+    border-radius: .25em;
     display: inline;
-    margin-top: 5px;
     font-size: 28px !important;
     font-weight: normal;
     line-height: 1.4;
+    margin-top: 5px;
     text-align: left;
     vertical-align: baseline;
-    border-radius: .25em;
+    width: 750px;
 }

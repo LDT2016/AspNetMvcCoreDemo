@@ -10,7 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiDemo.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/renditions")]
+    //[Route("/api/assets/[sha1]?v=[version]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
