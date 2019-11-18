@@ -411,6 +411,7 @@ namespace ApiDemo.Library
             var len = impFormats.Length;
             
             var iIndex = new int[len];
+
             for (var i = 0; i < len; i++)
             {
                 iIndex[i] = i;
