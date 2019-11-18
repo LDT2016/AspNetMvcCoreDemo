@@ -23,7 +23,7 @@
   <ItemGroup>
     <PackageReference Include="51Degrees.mobi-core" Version="3.2.21.1" />
     <PackageReference Include="ABCpdfCore" Version="11.2.3" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
