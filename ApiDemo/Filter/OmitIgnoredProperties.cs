@@ -76,8 +76,8 @@ namespace ApiDemo.Filter
 
             if (context.ApiDescription.TryGetMethodInfo(out MethodInfo methodInfo))
             {
-                if (!methodInfo.CustomAttributes.Any(t => t.AttributeType == typeof(AllowAnonymousAttribute))
-                    && !(methodInfo.ReflectedType.CustomAttributes.Any(t => t.AttributeType == typeof(AuthorizeAttribute))))
+                if (methodInfo.ReflectedType != null && (methodInfo.CustomAttributes.All(t => t.AttributeType != typeof(AllowAnonymousAttribute))
+                                                         && !(methodInfo.ReflectedType.CustomAttributes.Any(t => t.AttributeType == typeof(AuthorizeAttribute)))))
                 {
                     operation.Parameters.Add(new NonBodyParameter
                                              {

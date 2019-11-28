@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Net.Http.Formatting;
 using System.Reflection;
 using System.Xml;
@@ -123,8 +124,14 @@ namespace ApiDemo
             services.AddScoped<ILocation, ApiDemo.Library.Location>();
 
             services.AddSwaggerGen(x =>
-                                   {
-                                       x.SwaggerDoc("v1",
+            {
+                //forbid actions require unique method/path combination 
+                x.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+
+                //根据全名来生成
+                x.CustomSchemaIds((type) => type.FullName);
+
+                x.SwaggerDoc("v1",
                                                     new Info
                                                     {
                                                         Version = "v1", //版本号
@@ -171,7 +178,7 @@ namespace ApiDemo
                                        var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                                        var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                                        x.IncludeXmlComments(xmlPath);
-
+                                      
                                        //反射注入全部程序集说明
 
                                        //GetAllAssemblies().Where(t => t.CodeBase.EndsWith("Controller.dll")).ToList().ForEach(assembly =>
@@ -182,7 +189,16 @@ namespace ApiDemo
                                        //请输入Token，格式为bearer XXX
                                        //x.OperationFilter<HttpHeaderOperationFilter>();
                                        x.DocumentFilter<HiddenApiFilter>();
+                                      
                                    });
+
+            //api 版本控制
+            services.AddApiVersioning(x =>
+                                      {
+                                          x.ReportApiVersions = true;
+                                          x.AssumeDefaultVersionWhenUnspecified = true;
+                                          x.DefaultApiVersion = new ApiVersion(1, 0);
+                                      });
         }
 
         #endregion
