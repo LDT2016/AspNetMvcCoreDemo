@@ -7,7 +7,7 @@ namespace ApiDemo.Models.ui.locations
         #region properties
 
         public Dictionary<string, Format> Formats { get; set; }
-        public Dictionary<string, List<Combination>> Groups { get; set; }
+        public Dictionary<string, ImprintGroup> Groups { get; set; }
         public Dictionary<string, string> testDic
         {
             get; set;

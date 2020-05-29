@@ -75,7 +75,7 @@ namespace ApiDemo.Library
             return new Locations
                    {
                        Formats = formats.ToDictionary(x => x.Key, x => x),
-                       Groups = groups,
+                       Groups = groups.ToDictionary(x => x.Name, x => x),
                        //testDic = testDic
                    };
 
@@ -108,7 +108,7 @@ namespace ApiDemo.Library
             //CombinationsText
             imprintFormatGroup.CombinationsText = string.Join(EndChar,
                                                               combinedFormats.Select(x => x.Description.ToTitleCaseAdvance())
-                                                                             .ToArray());
+                                                                             .ToArray()).ToTitleCaseAdvance();
 
             var connectImprintgroup = string.Join(Semicolon,
                                                   combinedFormats.Select(x => x.ImprintGroup.ToTitleCaseAdvance())
@@ -490,13 +490,26 @@ namespace ApiDemo.Library
                 Location = NOTAPPLICABLE,
                 Sequence = -1
             };
+            //todo:ProcessType,LogoOnly??? from ImprintAreaCode
+            //if (imprintAreaHeaderDict != null && !string.IsNullOrEmpty(defaultImprintAreaCodeKey))
+            //{
+            //    var imprintAreaHeader = imprintAreaHeaderDict.Contains(defaultImprintAreaCodeKey) ? imprintAreaHeaderDict[defaultImprintAreaCodeKey] : null;
+            //    if (imprintAreaHeader != null)
+            //    {
+            //        var imprintAreaHeaderBo = (ImprintAreaHeaderBO)imprintAreaHeader;
+            //        fomat.ProcessType = imprintAreaHeaderBo.ProcessType;
+            //        fomat.LogoOnly = imprintAreaHeaderBo.LogoOnly;
+            //    }
+            //}
 
             return fomat;
         }
 
-        private Dictionary<string, Combinations> GetOptionCombinationList(List<Format> formats)
+        private List<ApiDemo.Models.ui.locations.ImprintGroup> GetOptionCombinationList(List<Format> formats)
         {
-            var groups = new Dictionary<string, Combinations>();
+            //var groups = new Dictionary<string, Combinations>();
+            var groups = new List<ApiDemo.Models.ui.locations.ImprintGroup>();
+
 
             //var lstCombination = new List<Combinations>();
             Combinations combination;
@@ -511,9 +524,14 @@ namespace ApiDemo.Library
                 combination = GetCombination(formats);
 
                 //lstCombination.Add(combination);
-                if (!groups.ContainsKey(lstGroups[0]))
+                //if (!groups.ContainsKey(lstGroups[0]))
+                if (!groups.Any(x => x.Name.Equals(lstGroups[0], StringComparison.OrdinalIgnoreCase)))
                 {
-                    groups.Add(lstGroups[0], combination);
+                    groups.Add(new ImprintGroup
+                               {
+                                   Name = lstGroups[0],
+                                   Combinations = combination
+                               });
                 }
             }
             else
@@ -525,29 +543,57 @@ namespace ApiDemo.Library
                     combination = GetCombination(_groupDivide);
 
                     //lstCombination.Add(combination);
-                    if (!groups.ContainsKey(gName))
+                    //if (!groups.ContainsKey(gName))
+                    //{
+                    //    groups.Add(gName, combination);
+                    //}
+                    if (!groups.Any(x => x.Name.Equals(gName, StringComparison.OrdinalIgnoreCase)))
                     {
-                        groups.Add(gName, combination);
+                        groups.Add(new ImprintGroup
+                                   {
+                                       Name = gName,
+                                       Combinations = combination
+                                   });
                     }
+
                 }
             }
 
-            foreach (var gname in groups.Keys)
+            foreach (var group in groups)
             {
                 for (var j = 0; j
-                                < groups[gname]
-                                    .Count; j++)
+                                < group.Combinations.Count; j++)
                 {
-                    groups[gname][j]
-                        .Index = j;
-                    ImprintFormatGroupInitialze(groups[gname][j], formats);
+                    group.Combinations[j]
+                         .Index = j;
+                    ImprintFormatGroupInitialze(group.Combinations[j], formats);
                 }
 
+                //todo:!SessionMgr.Item.IsImprintRequired
                 if (true) //(!SessionMgr.Item.IsImprintRequired)
                 {
-                    AddNoneImprintFormat(groups[gname], formats.NewSort());
+                    AddNoneImprintFormat(group.Combinations, formats.NewSort());
                 }
             }
+
+
+
+            //foreach (var gname in groups.Keys)
+            //{
+            //    for (var j = 0; j
+            //                    < groups[gname]
+            //                        .Count; j++)
+            //    {
+            //        groups[gname][j]
+            //            .Index = j;
+            //        ImprintFormatGroupInitialze(groups[gname][j], formats);
+            //    }
+
+            //    if (true) //(!SessionMgr.Item.IsImprintRequired)
+            //    {
+            //        AddNoneImprintFormat(groups[gname], formats.NewSort());
+            //    }
+            //}
 
             //if (true)//(!SessionMgr.Item.IsImprintRequired)
             //{
@@ -592,7 +638,7 @@ namespace ApiDemo.Library
             imprintFormatGroup.TempNoImprintThumbnailNm = tempNoneTnNm;
 
             //IsSelected
-            imprintFormatGroup.IsSelected = string.Empty;
+            //imprintFormatGroup.IsSelected = string.Empty;
 
             //todo:IsSelected
             //if (imprintFormats.Count == lstDefaultItem.Count)

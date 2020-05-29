@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ApiDemo.Models.ui.locations
 {
-    public class Group
+    public class ImprintGroup
     {
         public List<Combination> Combinations { set; get; } = new List<Combination>();
         public string Name { set; get; } = string.Empty;

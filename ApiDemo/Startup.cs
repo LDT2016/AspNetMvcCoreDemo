@@ -74,6 +74,7 @@ namespace ApiDemo
                                  c.RoutePrefix = string.Empty;
                              });
 
+            //ASP.NET Core CORS WebAPI: no Access-Control-Allow-Origin header
             app.UseCors(builder => builder.AllowAnyOrigin().
                                            AllowAnyMethod().
                                            AllowAnyHeader().
@@ -92,6 +93,7 @@ namespace ApiDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //ASP.NET Core CORS WebAPI: no Access-Control-Allow-Origin header
             services.AddCors();
 
             services.AddMvc().
@@ -100,8 +102,7 @@ namespace ApiDemo
                                         option.SerializerSettings.ContractResolver = new LowercaseContractResolver();
                                     });
             // set auto mapper
-            services.AddAutoMapper(typeof(MappingProfile).GetTypeInfo()
-                                                         .Assembly);
+            services.AddAutoMapper(typeof(MappingProfile).GetTypeInfo().Assembly);
 
             //Use MemoryCache
             services.AddSingleton<IMemoryCache>(factory =>

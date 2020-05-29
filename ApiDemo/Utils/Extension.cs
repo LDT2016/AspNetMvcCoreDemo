@@ -17,7 +17,7 @@ namespace ApiDemo.Utils
 
         public static string ToTitleCaseAdvance(this string str)
         {
-            str = textInfo.ToTitleCase(str).Trim();
+            str = textInfo.ToTitleCase(str.ToLower()).Trim();
             return str.Length == 0 ? " " : str;
         }
 

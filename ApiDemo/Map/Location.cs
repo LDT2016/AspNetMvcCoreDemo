@@ -16,7 +16,13 @@ namespace ApiDemo.Map
             CreateMap<ImprintFormatBO, Format>()
                 .ForMember(to => to.IsDefault, opt => { opt.MapFrom(from => from.IsDefault.Trim().Equals("y", StringComparison.OrdinalIgnoreCase)); })
                 .ForMember(to => to.ShowOnWeb, opt => { opt.MapFrom(from => from.ShowOnWeb.Trim().Equals("y", StringComparison.OrdinalIgnoreCase)); })
-                .ForMember(to => to.ProcessType, opt => { opt.MapFrom(from => from.ProcessId.ToString().ToEnum<ProcessTypes>()); });
+                .ForMember(to => to.ProcessType,
+                           opt =>
+                           {
+                               //opt.MapFrom(from => from.ProcessType);
+
+                               opt.MapFrom(from => from.ProcessId.ToString().ToEnum<ProcessTypes>());
+                           });
         }
     }
 

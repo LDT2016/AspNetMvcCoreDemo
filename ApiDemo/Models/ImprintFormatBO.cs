@@ -1,4 +1,6 @@
-﻿namespace ApiDemo.Models
+﻿using Taylor.Apl.Dapper;
+
+namespace ApiDemo.Models
 {
     public class ImprintFormatBO
     {
@@ -11,7 +13,17 @@
         public string IsDefault { get; set; }
         public string Location { get; set; }
         public bool LogoOnly { get; set; }
-        public int ProcessId { get; set; }
+
+
+        public int ProcessId
+        {
+            get; set;
+        }
+        //[Column(Name = "ProcessId")]
+        //public ProcessTypes ProcessType
+        //{
+        //    get; set;
+        //}
         public int Sequence { get; set; }
         public string ShowOnWeb { get; set; }
         public string StyleId { get; set; }
@@ -64,3 +76,5 @@
 
 
 //the 1st commit
+//the 2nd commit
+//the 3th commit
