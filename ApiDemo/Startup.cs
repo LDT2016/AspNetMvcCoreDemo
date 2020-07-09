@@ -7,6 +7,7 @@ using System.Xml;
 using ApiDemo.Controllers;
 using ApiDemo.Filter;
 using ApiDemo.Interface;
+using ApiDemo.Library;
 using ApiDemo.Library.Contracts;
 using ApiDemo.Map;
 using ApiDemo.Services;
@@ -123,6 +124,8 @@ namespace ApiDemo
             services.AddScoped<ISqlHelper, SqlHelper>();
             services.AddScoped<ILocationsService, LocationsService>();
             services.AddScoped<ILocation, ApiDemo.Library.Location>();
+            services.AddScoped<IConfigIdService, ConfigIdService>();
+            services.AddScoped<IConfigId, ConfigId>();
 
             services.AddSwaggerGen(x =>
             {

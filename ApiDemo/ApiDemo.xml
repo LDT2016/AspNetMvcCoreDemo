@@ -4,6 +4,17 @@
         <name>ApiDemo</name>
     </assembly>
     <members>
+        <member name="T:ApiDemo.Controllers.ConfigIdController">
+            <summary>
+            ConfigIdController
+            </summary>
+        </member>
+        <member name="M:ApiDemo.Controllers.ConfigIdController.#ctor(ApiDemo.Library.Contracts.IConfigId)">
+            <summary>
+            ConfigIdController
+            </summary>
+            <param name="configId"></param>
+        </member>
         <member name="M:ApiDemo.Controllers.ImprintController.Get">
             <summary>
             api/Imprint summary
@@ -269,6 +280,12 @@
             <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
             <returns></returns>
         </member>
+        <member name="M:ApiDemo.Library.ConfigId.GetNewConfigId">
+            <summary>
+            GetNewConfigId
+            </summary>
+            <returns>NewConfigId</returns>
+        </member>
         <member name="M:ApiDemo.Library.Location.GetLocations(System.String)">
             <summary>
             
@@ -282,6 +299,15 @@
             </summary>
             <param name="lstDefaultItem">for IsSelected, selected option by edit from database</param>
             <param name="imprintFormatGroup"></param>
+        </member>
+        <member name="M:ApiDemo.Services.ConfigIdService.GetNewConfigId">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiDemo.Services.ConfigIdService.GetRootPath">
+            <summary>
+            取得网站根目录的物理路径
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:ApiDemo.Services.FiftyOneDegreesService">
             <summary>
