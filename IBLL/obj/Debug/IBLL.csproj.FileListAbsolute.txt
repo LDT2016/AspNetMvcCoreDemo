@@ -1,7 +1,0 @@
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\IBLL.dll
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\IBLL.pdb
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\IBLL\obj\Debug\IBLL.csprojAssemblyReference.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\IBLL\obj\Debug\IBLL.csproj.CoreCompileInputs.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\IBLL\obj\Debug\IBLL.csproj.CopyComplete
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\IBLL\obj\Debug\IBLL.dll
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\IBLL\obj\Debug\IBLL.pdb

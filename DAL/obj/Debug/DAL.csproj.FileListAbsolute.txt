@@ -1,7 +1,0 @@
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\DAL.dll
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\DAL.pdb
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DAL\obj\Debug\DAL.dll
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DAL\obj\Debug\DAL.pdb

@@ -1,7 +1,0 @@
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\DBUtility.dll
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\Lib\DBUtility.pdb
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DBUtility\obj\Release\DBUtility.csproj.CoreCompileInputs.cache
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DBUtility\obj\Release\DBUtility.csproj.CopyComplete
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DBUtility\obj\Release\DBUtility.dll
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DBUtility\obj\Release\DBUtility.pdb
-D:\LIDATONG\WORKPLACE-TEST\AspNetMvcCoreDemo\DBUtility\obj\Release\DBUtility.csprojAssemblyReference.cache

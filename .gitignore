@@ -143,3 +143,13 @@ Model/obj/Release/Model.dll
 Model/obj/Release/Model.pdb
 /ApiDemo/wwwroot/resources/icons
 /ApiDemo/bin
+ApiDemo/obj
+.vs
+AspNetMvcCoreDemo/obj
+BLL/obj
+DAL/obj
+DBUtility/obj
+DotNetService/obj
+IBLL/obj
+Model/obj
+ApiDemo/.config
