@@ -34,6 +34,11 @@
             <param name="itemid">30303 (T-shirt), 34939 (multiple groups)</param>
             <returns></returns>
         </member>
+        <member name="T:ApiDemo.Controllers.TestProductController">
+            <summary>
+            TestProductController
+            </summary>
+        </member>
         <member name="M:ApiDemo.Controllers.ValuesController.Get">
             <summary>
             GET api/values
@@ -300,6 +305,91 @@
             <param name="lstDefaultItem">for IsSelected, selected option by edit from database</param>
             <param name="imprintFormatGroup"></param>
         </member>
+        <member name="M:ApiDemo.Library.TestProductLib.GetNaFormat(System.String)">
+            <summary>
+            get Not Application ImprintFormat
+            </summary>
+            <param name="defaultImprintAreaCodeKey">default ImprintAreaCode</param>
+            <returns>Not Application ImprintFormat</returns>
+        </member>
+        <member name="T:ApiDemo.Models.GeneralConstant">
+            <summary>
+            the constants for app
+            </summary>
+            <remarks>
+            the naming convention: Pascal without underscore(_)
+            </remarks>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.ItemId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.Bom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.Vignette">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.FoldLine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.MultipleSides">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.Upsell">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.Prop65">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.Note">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.VendorId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.Verse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.Sentiment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.Slogan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.ImprintRequired">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ApiDemo.Models.TestProduct.GroupedQuantity">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:ApiDemo.Services.ConfigIdService.GetNewConfigId">
             <inheritdoc />
         </member>
@@ -433,6 +523,15 @@
             验证缓存是否存在
             </summary>
             <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.TestProductService.GetTestProduct">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiDemo.Services.TestProductService.GetRootPath">
+            <summary>
+            取得网站根目录的物理路径
+            </summary>
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:ApiDemo.Utils.Extension.ToEnum``1(System.String)" -->

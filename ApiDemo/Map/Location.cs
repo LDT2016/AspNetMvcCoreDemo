@@ -23,7 +23,23 @@ namespace ApiDemo.Map
 
                                opt.MapFrom(from => from.ProcessId.ToString().ToEnum<ProcessTypes>());
                            });
+
+            CreateMap<ImprintFormatData, ImprintFormatModel>()
+                .ForMember(to => to.IsDefault,
+                           opt =>
+                           {
+                               opt.MapFrom(from => from.IsDefault.Trim()
+                                                       .Equals(GeneralConstant.LetterY, StringComparison.OrdinalIgnoreCase));
+                           })
+                .ForMember(to => to.ShowOnWeb,
+                           opt =>
+                           {
+                               opt.MapFrom(from => from.ShowOnWeb.Trim()
+                                                       .Equals(GeneralConstant.LetterY, StringComparison.OrdinalIgnoreCase));
+                           });
         }
+
+
     }
 
     public class MappingProfile : Profile

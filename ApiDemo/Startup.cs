@@ -126,6 +126,8 @@ namespace ApiDemo
             services.AddScoped<ILocation, ApiDemo.Library.Location>();
             services.AddScoped<IConfigIdService, ConfigIdService>();
             services.AddScoped<IConfigId, ConfigId>();
+            services.AddScoped<ITestProductLib, TestProductLib>();
+            services.AddScoped<ITestProductService, TestProductService>();
 
             services.AddSwaggerGen(x =>
             {
