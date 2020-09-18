@@ -15,6 +15,42 @@
             </summary>
             <param name="configId"></param>
         </member>
+        <member name="T:ApiDemo.Controllers.DecryptController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiDemo.Controllers.DecryptController.#ctor(ApiDemo.Library.Contracts.IAes)">
+            <summary>
+            DecryptController
+            </summary>
+            <param name="aes"></param>
+        </member>
+        <member name="M:ApiDemo.Controllers.DecryptController.Get(System.String)">
+            <summary>
+            GET: api/Decrypt/cipher
+            </summary>
+            <param name="cipher"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiDemo.Controllers.EncryptController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiDemo.Controllers.EncryptController.#ctor(ApiDemo.Library.Contracts.IAes)">
+            <summary>
+            EncryptController
+            </summary>
+            <param name="aes"></param>
+        </member>
+        <member name="M:ApiDemo.Controllers.EncryptController.Get(System.String)">
+            <summary>
+            GET: api/Decrypt/plain
+            </summary>
+            <param name="plain"></param>
+            <returns></returns>
+        </member>
         <member name="M:ApiDemo.Controllers.ImprintController.Get">
             <summary>
             api/Imprint summary
@@ -285,11 +321,55 @@
             <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
             <returns></returns>
         </member>
+        <member name="T:ApiDemo.Library.Aes">
+            <summary>
+            Aes
+            </summary>
+        </member>
+        <member name="M:ApiDemo.Library.Aes.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Decrypt
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:ApiDemo.Library.Aes.AesDecrypt(System.String)">
+            <summary>
+            AesDecrypt
+            </summary>
+            <param name="cipherText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Library.Aes.AesEncrypt(System.String)">
+            <summary>
+            AesEncrypt
+            </summary>
+            <param name="plainText"></param>
+            <returns></returns>
+        </member>
         <member name="M:ApiDemo.Library.ConfigId.GetNewConfigId">
             <summary>
             GetNewConfigId
             </summary>
             <returns>NewConfigId</returns>
+        </member>
+        <member name="T:ApiDemo.Library.Contracts.IAes">
+            <summary>
+            IAes
+            </summary>
+        </member>
+        <member name="M:ApiDemo.Library.Contracts.IAes.AesDecrypt(System.String)">
+            <summary>
+            AesDecrypt
+            </summary>
+            <param name="cipherText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Library.Contracts.IAes.AesEncrypt(System.String)">
+            <summary>
+            AesEncrypt
+            </summary>
+            <param name="plainText"></param>
+            <returns></returns>
         </member>
         <member name="M:ApiDemo.Library.Location.GetLocations(System.String)">
             <summary>
