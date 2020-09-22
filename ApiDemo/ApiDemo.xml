@@ -70,6 +70,12 @@
             <param name="itemid">30303 (T-shirt), 34939 (multiple groups)</param>
             <returns></returns>
         </member>
+        <member name="M:ApiDemo.Controllers.QrCodeController.#ctor(ApiDemo.Library.Contracts.IQrCodeLibrary)">
+            <summary>
+            DecryptController
+            </summary>
+            <param name="aes"></param>
+        </member>
         <member name="T:ApiDemo.Controllers.TestProductController">
             <summary>
             TestProductController
@@ -370,6 +376,11 @@
             </summary>
             <param name="plainText"></param>
             <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Library.Contracts.IQrCodeLibrary.ToQR(System.String)">
+            <summary>
+            获取链接地址对应的二维码图像
+            </summary>
         </member>
         <member name="M:ApiDemo.Library.Location.GetLocations(System.String)">
             <summary>
