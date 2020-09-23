@@ -377,7 +377,7 @@
             <param name="plainText"></param>
             <returns></returns>
         </member>
-        <member name="M:ApiDemo.Library.Contracts.IQrCodeLibrary.ToQR(System.String)">
+        <member name="M:ApiDemo.Library.Contracts.IQrCodeLibrary.ToQR(System.String,System.Boolean)">
             <summary>
             获取链接地址对应的二维码图像
             </summary>

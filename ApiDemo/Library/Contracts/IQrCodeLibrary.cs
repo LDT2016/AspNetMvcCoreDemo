@@ -12,7 +12,7 @@ namespace ApiDemo.Library.Contracts
         /// 获取链接地址对应的二维码图像
         /// </summary>
 
-        Task<string> ToQR(string url);
+        Task<string> ToQR(string url, bool colored = false);
 
     }
 }

@@ -34,7 +34,7 @@ namespace ApiDemo.Controllers
         [HttpGet]
         public async Task<string> Get(string code)
         {
-            return await Task.Run(() => _qrcodelib.ToQR(code));
+            return await Task.Run(() => _qrcodelib.ToQR(code, true));
         }
 
     }
