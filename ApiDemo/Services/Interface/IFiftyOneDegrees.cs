@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ApiDemo.Interface
+namespace ApiDemo.Services.Interface
 {
     public interface IFiftyOneDegrees
     {

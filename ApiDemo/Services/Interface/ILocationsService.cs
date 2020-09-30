@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApiDemo.Models;
 
-namespace ApiDemo.Interface
+namespace ApiDemo.Services.Interface
 {
     public interface ILocationsService
     {

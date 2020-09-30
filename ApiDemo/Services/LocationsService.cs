@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
-using ApiDemo.Interface;
+using ApiDemo.Services.Interface;
 using ApiDemo.Models;
 using Microsoft.Extensions.Configuration;
 using Taylor.Apl.Dapper.Sql;

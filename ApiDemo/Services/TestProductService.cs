@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using ApiDemo.Interface;
+using ApiDemo.Services.Interface;
 using ApiDemo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;

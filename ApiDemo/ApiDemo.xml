@@ -145,188 +145,6 @@
             隐藏swagger接口特性标识
             
         </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Add(System.String,System.Object)">
-            <summary>
-            添加缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">缓存Value</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.AddAsync(System.String,System.Object)">
-            <summary>
-            添加缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">缓存Value</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Add(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
-            <summary>
-            添加缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">缓存Value</param>
-            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
-            <param name="expiressAbsoulte">绝对过期时长</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.AddAsync(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
-            <summary>
-            添加缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">缓存Value</param>
-            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
-            <param name="expiressAbsoulte">绝对过期时长</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Add(System.String,System.Object,System.TimeSpan,System.Boolean)">
-            <summary>
-            添加缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">缓存Value</param>
-            <param name="expiresIn">缓存时长</param>
-            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.AddAsync(System.String,System.Object,System.TimeSpan,System.Boolean)">
-            <summary>
-            添加缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">缓存Value</param>
-            <param name="expiresIn">缓存时长</param>
-            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Remove(System.String)">
-            <summary>
-            删除缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.RemoveAsync(System.String)">
-            <summary>
-            删除缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.RemoveAll(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            批量删除缓存
-            </summary>
-            <param name="key">缓存Key集合</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.RemoveAllAsync(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            批量删除缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key集合</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Get``1(System.String)">
-            <summary>
-            获取缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.GetAsync``1(System.String)">
-            <summary>
-            获取缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Get(System.String)">
-            <summary>
-            获取缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.GetAsync(System.String)">
-            <summary>
-            获取缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.GetAll(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            获取缓存集合
-            </summary>
-            <param name="keys">缓存Key集合</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.GetAllAsync(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            获取缓存集合（异步方式）
-            </summary>
-            <param name="keys">缓存Key集合</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Replace(System.String,System.Object)">
-            <summary>
-            修改缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">新的缓存Value</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.ReplaceAsync(System.String,System.Object)">
-            <summary>
-            修改缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">新的缓存Value</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Replace(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
-            <summary>
-            修改缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">新的缓存Value</param>
-            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
-            <param name="expiressAbsoulte">绝对过期时长</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.ReplaceAsync(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
-            <summary>
-            修改缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">新的缓存Value</param>
-            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
-            <param name="expiressAbsoulte">绝对过期时长</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.Replace(System.String,System.Object,System.TimeSpan,System.Boolean)">
-            <summary>
-            修改缓存
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">新的缓存Value</param>
-            <param name="expiresIn">缓存时长</param>
-            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiDemo.Interface.ICacheService.ReplaceAsync(System.String,System.Object,System.TimeSpan,System.Boolean)">
-            <summary>
-            修改缓存（异步方式）
-            </summary>
-            <param name="key">缓存Key</param>
-            <param name="value">新的缓存Value</param>
-            <param name="expiresIn">缓存时长</param>
-            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
-            <returns></returns>
-        </member>
         <member name="T:ApiDemo.Library.Aes">
             <summary>
             Aes
@@ -495,11 +313,193 @@
             FiftyOneDegreesService
             </summary>
         </member>
-        <member name="M:ApiDemo.Services.FiftyOneDegreesService.#ctor(ApiDemo.Interface.ICacheService)">
+        <member name="M:ApiDemo.Services.FiftyOneDegreesService.#ctor(ApiDemo.Services.Interface.ICacheService)">
             <summary>
             FiftyOneDegreesService
             </summary>
             <param name="cache"></param>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Add(System.String,System.Object)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.AddAsync(System.String,System.Object)">
+            <summary>
+            添加缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Add(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <param name="expiressAbsoulte">绝对过期时长</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.AddAsync(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            添加缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <param name="expiressAbsoulte">绝对过期时长</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Add(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.AddAsync(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            添加缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Remove(System.String)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.RemoveAsync(System.String)">
+            <summary>
+            删除缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.RemoveAll(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            批量删除缓存
+            </summary>
+            <param name="key">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.RemoveAllAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            批量删除缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Get``1(System.String)">
+            <summary>
+            获取缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.GetAsync``1(System.String)">
+            <summary>
+            获取缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Get(System.String)">
+            <summary>
+            获取缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.GetAsync(System.String)">
+            <summary>
+            获取缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.GetAll(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存集合
+            </summary>
+            <param name="keys">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.GetAllAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存集合（异步方式）
+            </summary>
+            <param name="keys">缓存Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Replace(System.String,System.Object)">
+            <summary>
+            修改缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.ReplaceAsync(System.String,System.Object)">
+            <summary>
+            修改缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Replace(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            修改缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <param name="expiressAbsoulte">绝对过期时长</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.ReplaceAsync(System.String,System.Object,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            修改缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <param name="expiresSliding">滑动过期时长（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <param name="expiressAbsoulte">绝对过期时长</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.Replace(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            修改缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ICacheService.ReplaceAsync(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            修改缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">新的缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
         </member>
         <member name="M:ApiDemo.Services.MemoryCacheService.Add(System.String,System.Object)">
             <summary>

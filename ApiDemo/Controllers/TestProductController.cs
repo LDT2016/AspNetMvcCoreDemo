@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Threading.Tasks;
-using ApiDemo.Interface;
+using ApiDemo.Services.Interface;
 using ApiDemo.Library.Contracts;
 using ApiDemo.Models;
 using Microsoft.AspNetCore.Mvc;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ApiDemo.Interface;
+using ApiDemo.Services.Interface;
 using ApiDemo.Library.Contracts;
 using ApiDemo.Models.ui.locations;
 using AutoMapper;

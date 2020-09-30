@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using ApiDemo.Interface;
+using ApiDemo.Services.Interface;
 using ApiDemo.Library.Contracts;
 using ApiDemo.Models;
 using ApiDemo.Models.ui.locations;
