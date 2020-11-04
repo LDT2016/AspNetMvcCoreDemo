@@ -57,6 +57,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:ApiDemo.Controllers.LocalIPv4Controller">
+            <summary>
+            LocalIPv4Controller
+            </summary>
+        </member>
         <member name="M:ApiDemo.Controllers.LocationsController.#ctor(ApiDemo.Library.Contracts.ILocation)">
             <summary>
             
@@ -499,6 +504,41 @@
             <param name="value">新的缓存Value</param>
             <param name="expiresIn">缓存时长</param>
             <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiDemo.Services.Interface.ILocalIPv4Service">
+            <summary>
+            ILocalIPv4
+            </summary>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ILocalIPv4Service.GetLocalIp">
+            <summary>
+            获取当前使用的IP
+            </summary>
+            <returns>当前使用的IP</returns>
+        </member>
+        <member name="M:ApiDemo.Services.Interface.ILocalIPv4Service.GetPrimaryDns">
+            <summary>
+            获取本机主DNS
+            </summary>
+            <returns>本机主DNS</returns>
+        </member>
+        <member name="T:ApiDemo.Services.LocalIPv4Service">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiDemo.Services.LocalIPv4Service.GetLocalIp">
+            <inheritdoc cref="M:ApiDemo.Services.Interface.ILocalIPv4Service.GetLocalIp"/>
+        </member>
+        <member name="M:ApiDemo.Services.LocalIPv4Service.GetPrimaryDns">
+            <inheritdoc cref="M:ApiDemo.Services.Interface.ILocalIPv4Service.GetPrimaryDns"/>
+        </member>
+        <member name="M:ApiDemo.Services.LocalIPv4Service.RunApp(System.String,System.String,System.Boolean)">
+            <summary>
+            运行一个控制台程序并返回其输出参数。
+            </summary>
+            <param name="filename">程序名</param>
+            <param name="arguments">输入参数</param>
+            <param name="recordLog">recordLog</param>
             <returns></returns>
         </member>
         <member name="M:ApiDemo.Services.MemoryCacheService.Add(System.String,System.Object)">

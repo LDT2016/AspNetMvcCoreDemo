@@ -131,6 +131,7 @@ namespace ApiDemo
             services.AddScoped<ITestProductService, TestProductService>();
             services.AddScoped<IAes, Aes>();
             services.AddScoped<IQrCodeLibrary, QrCodeLibrary>();
+            services.AddScoped<ILocalIPv4Service, LocalIPv4Service>();
 
             services.AddSwaggerGen(x =>
             {
