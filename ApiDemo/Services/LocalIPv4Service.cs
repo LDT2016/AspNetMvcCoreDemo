@@ -1,47 +1,66 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Net;
+using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using ApiDemo.Services.Interface;
+using Microsoft.Extensions.Configuration;
 
 namespace ApiDemo.Services
 {
     /// <inheritdoc />
     public class LocalIPv4Service : ILocalIPv4Service
     {
+        private readonly string _defaultGateway;
+        public LocalIPv4Service(IConfiguration configuration)
+        {
+            if (configuration != null)
+            {
+                _defaultGateway = configuration["DefaultGateway"];
+            }
+        }
         #region methods
 
         /// <inheritdoc cref="ILocalIPv4Service.GetLocalIp()"/>
         public string GetLocalIp()
         {
-            var result = RunApp("route", "print", true);
-            var m = Regex.Match(result, @"0.0.0.0\s+0.0.0.0\s+(\d+.\d+.\d+.\d+)\s+(\d+.\d+.\d+.\d+)");
+            //var localIps = NetworkInterface.GetAllNetworkInterfaces()
+            //                                 .Select(p => p.GetIPProperties())
+            //                                 .SelectMany(p => p.UnicastAddresses).ToList().FindAll(p => p.Address.AddressFamily == AddressFamily.InterNetwork && !IPAddress.IsLoopback(p.Address));
 
-            if (m.Success)
+            //var localIps1 = NetworkInterface.GetAllNetworkInterfaces()
+            //                                .Select(p => new { Interfaces = p, IPProperties = p.GetIPProperties() });
+
+            var ethernetAdapterEthernetNetworkInterface = NetworkInterface.GetAllNetworkInterfaces()
+                                                                          .ToList()
+                                                                          .Find(p => p.GetIPProperties().DnsAddresses.Any(x => x.ToString() == _defaultGateway));
+
+            //var routerIpProps = NetworkInterface.GetAllNetworkInterfaces()
+            //                                    .Select(p => p.GetIPProperties())
+            //                                    .ToList()
+            //                                    .Find(x => x.DnsAddresses.Any(y => y.ToString() == "192.168.1.1"));
+            var localIp = "127.0.0.1";
+
+            if (ethernetAdapterEthernetNetworkInterface != null)
             {
-                return m.Groups[2]
-                        .Value;
+                var localProps = NetworkInterface.GetAllNetworkInterfaces()
+                                               .ToList()
+                                               .Find(x => x.Description == ethernetAdapterEthernetNetworkInterface.Description)
+                                               ?.GetIPProperties()
+                                               .UnicastAddresses.ToList()
+                                               .FirstOrDefault(p => p.Address.AddressFamily == AddressFamily.InterNetwork && !IPAddress.IsLoopback(p.Address));
+                if (localProps != null)
+                {
+                    localIp = localProps.Address.ToString();
+                }
             }
 
-            var ip = string.Empty;
-
-            try
-            {
-                var c = new TcpClient();
-                c.Connect("www.baidu.com", 80);
-                ip = ((IPEndPoint)c.Client.LocalEndPoint).Address.ToString();
-                c.Close();
-            }
-            catch (Exception)
-            {
-                // ignored
-            }
-
-            return ip;
+            return localIp;
         }
 
         /// <inheritdoc cref="ILocalIPv4Service.GetPrimaryDns()"/>
